@@ -12,9 +12,9 @@ public class TransactionDAO {
     private TransactionDAO() {
     }
 
-    TransactionDAO instance;
+    static TransactionDAO instance;
 
-    public TransactionDAO getInstance(){
+    public static TransactionDAO getInstance(){
         if(instance == null)
             instance = new TransactionDAO();
 

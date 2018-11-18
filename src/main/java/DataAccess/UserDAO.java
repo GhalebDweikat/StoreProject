@@ -17,9 +17,9 @@ public class UserDAO {
         userList = getUsersFromFile(inputFileName);
     }
 
-    UserDAO instance;
+    static UserDAO instance;
 
-    public UserDAO getInstance(){
+    public static UserDAO getInstance(){
         if(instance == null)
             instance = new UserDAO();
 
