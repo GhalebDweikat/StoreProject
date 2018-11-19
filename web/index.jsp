@@ -11,6 +11,9 @@
     <title>$Title$</title>
   </head>
   <body>
-    Change
+  <div class="container">
+    <h1 class="title">Welcome To The HomePage</h1>
+      <div><button>Go To Login Page</button> </div>
+  </div>
   </body>
 </html>

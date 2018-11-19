@@ -8,9 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Welcome To Our Store!</title>
 </head>
 <body>
-
+<div class="container">
+    <h1 class="title">Welcome To The HomePage</h1>
+    <div><button>Go To Login Page</button> </div>
+</div>
 </body>
 </html>
