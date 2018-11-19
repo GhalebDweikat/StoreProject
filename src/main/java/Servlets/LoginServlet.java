@@ -15,7 +15,7 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.sendRedirect("web/Views/Login.jsp");
+        resp.sendRedirect("Views/Login.jsp");
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -36,10 +36,10 @@ public class LoginServlet extends HttpServlet {
                 resp.addCookie(c);
 
             }
-            resp.sendRedirect("web/Views/Products.jsp");
+            req.getRequestDispatcher("View/Products.jsp").forward(req,resp);
         }  else {
             req.getSession().setAttribute("err_msg", "Username and/or password invalid.");
-            resp.sendRedirect("/");
+            req.getRequestDispatcher("View/Login.jsp").forward(req,resp);
         }
 
 
